@@ -1,4 +1,4 @@
-dp9 | Komaba Festival 2021 (72nd)
+# dp9 | Komaba Festival 2021 (72nd)
 ## Getting Started
 
 まず、依存関係をインストールします。このとき、 **npmは使用しないこと！**

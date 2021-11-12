@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import styles from '../styles/pages/Home.module.scss';
+import styles from '../styles/pages/Colour.module.scss';
 
 const Colour: NextPage = () => (
   <div className={styles.container}>

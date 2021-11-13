@@ -29,6 +29,7 @@
     "eslint-plugin-react": "^7.27.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "next-seo": "^4.28.1",
     "prettier": "^2.4.1",
     "prettier-stylelint": "^0.4.2",
     "sass": "^1.43.4",

@@ -28,8 +28,7 @@ VSCodeの拡張機能として上記3つをインストールした上で、``.v
   "files.insertFinalNewline": true,
   "files.eol": "\n",
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    // "source.fixAll.stylelint": true
+    "source.fixAll.eslint": true,
   },
   "eslint.validate": [
     "html",
@@ -38,7 +37,6 @@ VSCodeの拡張機能として上記3つをインストールした上で、``.v
     "typescript",
     "typescriptreact"
   ],
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false
@@ -48,6 +46,23 @@ VSCodeの拡張機能として上記3つをインストールした上で、``.v
 コマンドラインで ``yarn lint --fix``を走らせるとコードを自動フォーマットしますが、現実的にはこのコマンドに頼るばかりでは捗りません。上記のように適切にsettingsを記述し、VSCode（など）の自動フォーマッティング機能を用いることを推奨します。
 
 [contributing](documents/contributing.md)も参照してください。
+
+## directories
+
+- components
+  - コンポーネントファイルを格納します。基本的にはこのディレクトリの中を書くと考えて差し支えないでしょう。
+  - CSSも各子ディレクトリ内に格納してください。
+- documents
+  - contributing.mdを格納しています。
+- pages
+  - 各ページの定義ファイルを格納しています。
+  - 基本的には、コンポーネントベースで開発し、ここにあるファイルは極力シンプルに保つように心がけてください。
+- public
+  - 画像ファイルなどを格納する場所です。
+  - このディレクトリ内部に格納されたファイルは、``basepath/hogehoge``の形でアクセスできます。
+- styles
+  - ページに適用するCSSファイルを格納していますが、基本的には書き換えないものと考えてください。
+  - 繰り返しになりますが、各コンポーネントに適用するCSSは、componentsディレクトリの下に置いてください。
 
 ## contributors
 

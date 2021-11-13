@@ -1,3 +1,3 @@
 import { NextPage } from 'next';
 
-export const Footer: NextPage = () => <footer>this is footer</footer>;
+export const Concept: NextPage = () => <div></div>;

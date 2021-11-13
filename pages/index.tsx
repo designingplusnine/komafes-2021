@@ -18,7 +18,6 @@ const Home: NextPage = () => (
     <Concept/>
     <Projects/>
     <Komafes/>
-    <Footer/>
   </div>
 );
 

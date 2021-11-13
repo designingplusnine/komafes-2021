@@ -22,7 +22,7 @@ const arr = [
     {content:'を、デザインを通して考えました。',marginLeft:'10%'},
 ];
 
-export const Concept: NextPage = () => 
+export const Concept: NextPage = () =>
 <div className={styles.concept__box}>
     <div className={styles.concept__statement}>
     {arr.map((paragraph, i) => <div style={{marginLeft: paragraph.marginLeft}} className={styles.concept__statement}key={i}>{paragraph.content}</div>)}

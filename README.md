@@ -48,3 +48,7 @@ VSCodeの拡張機能として上記3つをインストールした上で、``.v
 コマンドラインで ``yarn lint --fix``を走らせるとコードを自動フォーマットしますが、現実的にはこのコマンドに頼るばかりでは捗りません。上記のように適切にsettingsを記述し、VSCode（など）の自動フォーマッティング機能を用いることを推奨します。
 
 [contributing](documents/contributing.md)も参照してください。
+
+## contributors
+
+- [Hiroki Kobayashi](https://github.com/khsacc)

@@ -68,3 +68,4 @@ VSCodeの拡張機能として上記3つをインストールした上で、``.v
 
 - [Hiroki Kobayashi](https://github.com/khsacc)
 - [Yokoi Sotaro](https://github.com/sotaro-ha)
+- [Eriko Yamada](https://github.com/Eyamada3)

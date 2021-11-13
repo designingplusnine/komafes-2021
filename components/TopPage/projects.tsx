@@ -1,4 +1,7 @@
 import { NextPage } from 'next';
-import styles from '../styles/TopPage/concept.module.scss';
+import styles from './concept.module.scss';
 
-export const Projects: NextPage = () =><div></div>;
+export const Projects: NextPage = () =>
+<div>
+ここにプロジェクトが来ます
+</div>;

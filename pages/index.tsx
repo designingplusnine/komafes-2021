@@ -3,6 +3,7 @@ import {Kv} from '../components/TopPage/kv';
 import {Komafes} from '../components/TopPage/komafes';
 import {Concept} from '../components/TopPage/concept';
 import {Projects} from '../components/TopPage/projects';
+import {Footer} from '../components/Footer';
 import Head from 'next/head';
 import styles from '../styles/pages/Home.module.scss';
 
@@ -17,6 +18,7 @@ const Home: NextPage = () => (
     <Concept/>
     <Projects/>
     <Komafes/>
+    <Footer></Footer>
   </div>
 );
 

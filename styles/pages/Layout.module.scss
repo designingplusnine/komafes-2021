@@ -1,0 +1,10 @@
+@import '../vars';
+
+.background {
+  &__container {
+    background-image: url('/img/background/sea_50percent.png');
+    background-repeat: repeat-y;
+    background-size: contain;
+    min-height: 100vh;
+  }
+}

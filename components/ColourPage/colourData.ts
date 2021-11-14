@@ -1,4 +1,4 @@
-type ColourDatum = {
+export type ColourDatum = {
   title: string;
   category: '赤と青' | '派手と地味';
   description: string;

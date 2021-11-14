@@ -1,0 +1,14 @@
+@import '../../styles/vars';
+
+.header {
+  background-color: $white-colour;
+  height: $header-height;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  &__logotype {
+    height: 90%;
+  }
+}

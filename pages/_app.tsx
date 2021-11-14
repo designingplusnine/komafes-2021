@@ -1,6 +1,7 @@
 import '../styles/globals.scss';
 import { DefaultSeo } from 'next-seo';
 import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
 import { useRouter } from 'next/dist/client/router';
 import classes from '../styles/pages/Layout.module.scss';
 
@@ -27,10 +28,10 @@ function MyApp({ Component, pageProps }) {
           cardType: 'summary_large_image',
         }}
       />
+      <Header />
       <div className={classes.background__container} style={{ backgroundColor: `#${colours[router.pathname]}` }}>
         <Component {...pageProps} />
       </div>
-
       <Footer />
     </>
   );

@@ -3,3 +3,18 @@ $main-pink: #f3e6e9;
 $main-olive: #beb399;
 $white-colour: #f7fdfd;
 $letter-colour: #49403d;
+$page-padding: 15px;
+$breakpoints: (
+  'xsmall': 320px,
+  'small' : 600px,
+  'medium': 768px,
+  'large' : 1024px,
+  'xlarge': 1280px,
+  'xxlarge': 1536px,
+);
+
+@mixin mq($breakpoint: medium) {
+  @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}

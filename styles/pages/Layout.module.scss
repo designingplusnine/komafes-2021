@@ -6,5 +6,9 @@
     background-repeat: repeat-y;
     background-size: contain;
     min-height: 100vh;
+
+    @include mq(xxlarge) {
+      background-size: cover;
+    }
   }
 }

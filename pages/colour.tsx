@@ -1,9 +1,10 @@
 import { NextPage } from 'next';
-import styles from '../styles/pages/Colour.module.scss';
+import { Paper } from '@material-ui/core';
+import classes from '../styles/pages/Colour.module.scss';
 
 const Colour: NextPage = () => (
-  <div className={styles.container}>
-    <h1 className={styles.title}>Welcome to Komaba Festival exhibition by designing plus nine!</h1>
+  <div className={classes.container}>
+    <Paper>aaa</Paper>
   </div>
 );
 

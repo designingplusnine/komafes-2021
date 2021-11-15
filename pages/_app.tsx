@@ -1,8 +1,20 @@
 import '../styles/globals.scss';
 import { DefaultSeo } from 'next-seo';
 import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
+import { useRouter } from 'next/dist/client/router';
+import classes from '../styles/pages/Layout.module.scss';
+
+export const colours = {
+  '/': 'f7fdfd',
+  '/colour': 'aec8d4',
+  '/time': 'f3e6e9',
+  '/diff': 'beb399',
+};
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
   return (
     <>
       <DefaultSeo
@@ -18,7 +30,10 @@ function MyApp({ Component, pageProps }) {
           cardType: 'summary_large_image',
         }}
       />
-      <Component {...pageProps} />
+      <Header />
+      <div className={classes.background__container} style={{ backgroundColor: `#${colours[router.pathname]}` }}>
+        <Component {...pageProps} />
+      </div>
       <Footer />
     </>
   );

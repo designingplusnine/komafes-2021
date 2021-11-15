@@ -5,14 +5,16 @@ import { Header } from '../components/Header';
 import { useRouter } from 'next/dist/client/router';
 import classes from '../styles/pages/Layout.module.scss';
 
+export const colours = {
+  '/': 'f7fdfd',
+  '/colour': 'aec8d4',
+  '/time': 'f3e6e9',
+  '/diff': 'beb399',
+};
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const colours = {
-    '/': 'f7fdfd',
-    '/diff': 'beb399',
-    '/time': 'f3e6e9',
-    '/colour': 'aec8d4',
-  };
+
   return (
     <>
       <DefaultSeo

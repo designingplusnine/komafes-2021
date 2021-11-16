@@ -66,6 +66,8 @@ VSCodeの拡張機能として上記3つをインストールした上で、``.v
 
 ## contributors
 
-- [Hiroki Kobayashi](https://github.com/khsacc)
+- [Hiroki_Kobayashi](https://github.com/khsacc)
 - [Yokoi Sotaro](https://github.com/sotaro-ha)
+- [Hikaru Kobayashi](https://github.com/eyesightiii)
 - [Nagi Masuda](https://github.com/NagiMasuda)
+- [Eriko Yamada](https://github.com/Eyamada3)

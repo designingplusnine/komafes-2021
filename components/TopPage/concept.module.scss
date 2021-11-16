@@ -1,0 +1,15 @@
+@import '../../styles/vars';
+
+@media screen and (min-width: 900px) {
+.concept__box{
+    text-align:center;
+    width:100%;
+    background-color:#E5E5E5;
+    padding:32px 16px;
+}
+.concept__statement{
+    margin-right:0;
+    padding: 4px;
+    display:inline-block;
+}
+}

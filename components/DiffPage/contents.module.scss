@@ -1,0 +1,42 @@
+@import '../../styles/vars.scss';
+
+.page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hr{
+    width: 90%;
+}
+
+.concept{
+    width: 100%;
+    margin-bottom: 30px;
+    &_text{
+        text-align: center;
+    }
+}
+
+.time{
+    width: 100%;
+    margin-bottom: 30px;
+    &_title{
+        text-align: center;
+    }
+}
+
+.gravity{
+    width: 100%;
+    margin-bottom: 30px;
+    &_title{
+        text-align: center;
+    }
+}
+
+.unstable{
+    width: 100%;
+    &_title{
+        text-align: center;
+    }
+}

@@ -1,4 +1,4 @@
-import { ColourDatum } from './colourData';
+import { ColourDatum, colourData } from './colourData';
 import { NextPage } from 'next';
 import Image from 'next/image';
 import classes from './ColourItem.module.scss';
@@ -16,4 +16,12 @@ export const ColourItem: NextPage<{ datum: ColourDatum }> = ({ datum }) => (
       </div>
     </div>
   </div>
+);
+
+export const ColourContent: NextPage = () => (
+  <>
+    {colourData.map(datum => (
+      <ColourItem datum={datum} />
+    ))}
+  </>
 );

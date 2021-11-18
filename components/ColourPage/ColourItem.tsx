@@ -7,7 +7,7 @@ export const ColourItem: NextPage<{ datum: ColourDatum }> = ({ datum }) => (
   <div>
     <h2>
       {datum.title}
-      <span>{datum.category}</span>
+      <span className={classes.category}>#{datum.category}</span>
     </h2>
     <div className={classes.content__container}>
       <div>

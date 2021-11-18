@@ -11,6 +11,17 @@
   top: 0;
   width: 100vw;
 
+  &__logo {
+    color: $letter-colour;
+    display: block;
+    height: 80%;
+    margin-bottom: 4px;
+
+    &__content {
+      height: 100%;
+    }
+  }
+
   &__logotype {
     display: block;
     height: 90%;

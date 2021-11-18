@@ -14,8 +14,10 @@ export const Header: NextPage = () => {
   const router = useRouter();
   return (
     <header className={classes.header}>
-      {/* <Link href="/">
-      <a className={classes.header__logotype__link}> */}
+      <a href="http://designingplusnine.com/" target="_blank" rel="noreferrer" className={classes.header__logo}>
+        <img src="/img/logo/dp9logo.svg" className={classes.header__logo__content} />
+      </a>
+
       <img
         src="/img/logo/logotype.svg"
         className={classes.header__logotype}
@@ -23,8 +25,6 @@ export const Header: NextPage = () => {
           router.push('/');
         }}
       />
-      {/* </a>
-    </Link> */}
       <div style={{ marginBottom: router.pathname === '/' ? '15px' : '0px' }}>
         {Object.keys(colours)
           .filter(c => c !== '/')

@@ -5,7 +5,7 @@
   background-color: $white-colour;
   display: flex;
   height: $header-height;
-  justify-content: space-around;
+  justify-content: center;
   left: 0;
   position: fixed;
   top: 0;
@@ -25,6 +25,7 @@
   &__logotype {
     display: block;
     height: 90%;
+    margin: 0 28px;
 
     &__link {
       display: block;

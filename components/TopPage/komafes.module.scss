@@ -1,16 +1,16 @@
 @import '../styles/vars'
 
 
-/*なぜ.deco1がうまく機能しないのかよくわかりません*/
-.deco1 {
+
+styles.deco1 {
     text-align: center;
     font-size: 60px;
 }
-.deco2 {
+styles.deco2 {
     text-align: center;
     font-size: 48px;
 }
-p {
+styles.p {
     text-align: center;
     font-size: 36px;
 }

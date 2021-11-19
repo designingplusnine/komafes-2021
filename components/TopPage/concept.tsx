@@ -17,7 +17,6 @@ const arr = [
   { content: '自由がある証拠ともいえます。', marginLeft: '10%' ,isFlag:false,marginRight:'30%'  },
   { content: 'そこにこそ、私たちは、新しい価値を', marginLeft: '10%' ,isFlag:false },
   { content: '見出せるのではないでしょうか。', marginLeft: '30%' ,isFlag:false  },
-
   { content: 'そんな世の中にあふれる', marginLeft: '10%' ,isFlag:true  },
   { content: '「ゆらぎ」', marginLeft: '10%'  ,isFlag:true },
   { content: 'を、デザインを通して考えました。', marginLeft: '10%' ,isFlag:true  },

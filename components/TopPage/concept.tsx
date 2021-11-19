@@ -14,21 +14,21 @@ const arr = [
   { content: '私たちは、そんなゆらぎの中を', marginLeft: '10%' ,isFlag:true },
   { content: '歩いていかなければならないのかもしれません。', marginLeft: '10%'  ,isFlag:true },
   { content: 'しかしゆらぎは、', marginLeft: '10%'  ,isFlag:false },
-  { content: '自由がある証拠ともいえます。', marginLeft: '10%' ,isFlag:false,marginRight:'30%'  },
+  { content: '自由がある証拠ともいえます。', marginLeft: '10%' ,isFlag:false ,br:<br/>},
   { content: 'そこにこそ、私たちは、新しい価値を', marginLeft: '10%' ,isFlag:false },
   { content: '見出せるのではないでしょうか。', marginLeft: '30%' ,isFlag:false  },
   { content: 'そんな世の中にあふれる', marginLeft: '10%' ,isFlag:true  },
   { content: '「ゆらぎ」', marginLeft: '10%'  ,isFlag:true },
   { content: 'を、デザインを通して考えました。', marginLeft: '10%' ,isFlag:true  },
 ];
+
 export const Concept: NextPage = () => (
   <div className={styles.concept}>
     <div className={styles.concept__statement}>
       {arr.map((paragraph, i) => (
         <div style={ {marginLeft: paragraph.isFlag ? paragraph.marginLeft:"0%"} } className={paragraph.isFlag ? styles.concept__normal:styles.concept__indention} key={i}>
-
-
           {paragraph.content}
+          {paragraph.br}
         </div>
       ))}
     </div>

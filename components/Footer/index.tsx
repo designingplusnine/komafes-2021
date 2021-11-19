@@ -12,14 +12,14 @@ export const Footer: NextPage = () =>
         src="/img/dp9logo/dp9logotype_white"
         className="classes.footer_dp9logotype"
     />
-    <div class="footer_text">
+    <div className="footer_text">
         <p>"DESIGN FOR EVERYONE -「すべての人が、デザインを。」 　　東京大学 × 東京藝術大学 のデザインサークル"</p>
         <p>"Copyright (C) designing plus nine. All Rights Reserved."</p>
     </div>
-    <div class="snsicon">
-        <img src="" className="classes.footer_shere_note" />
-        <img src="" className="classes.footer_shere_twitter" />
-        <img src="" className="classes.footer_shere_facebook" />
+    <div className="sns_icon">
+        <img src="/img/sns_icon/note" className="classes.footer_share_note" />
+        <img src="/img/sns_icon/twitter" className="classes.footer_share_twitter" />
+        <img src="/img/sns_icon/facebook" className="classes.footer_share_facebook" />
     </div>
   </footer>
 );

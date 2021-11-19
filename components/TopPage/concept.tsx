@@ -21,13 +21,13 @@ const arr = [
   { content: '「ゆらぎ」', marginLeft: '10%'  ,isFlag:true },
   { content: 'を、デザインを通して考えました。', marginLeft: '10%' ,isFlag:true  },
 ];
-
-
 export const Concept: NextPage = () => (
   <div className={styles.concept}>
     <div className={styles.concept__statement}>
       {arr.map((paragraph, i) => (
         <div style={ {marginLeft: paragraph.isFlag ? paragraph.marginLeft:"0%"} } className={paragraph.isFlag ? styles.concept__normal:styles.concept__indention} key={i}>
+
+
           {paragraph.content}
         </div>
       ))}

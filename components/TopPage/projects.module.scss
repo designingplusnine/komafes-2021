@@ -100,6 +100,13 @@
             transition:all 0.5s 0s ease;
         }
     }
+    &__land{
+        position:absolute;
+        top:5%;
+        left:3%;
+        width:60%;
+        filter: drop-shadow(1px 1px 7px rgba(0,0,0,0.5));
+    }
 }
 
 .time{
@@ -126,6 +133,13 @@
             transition:all 0.5s 0s ease;
         }
     }
+    &__land{
+        position:absolute;
+        top:10%;
+        left:3%;
+        width:60%;
+        filter: drop-shadow(1px 1px 7px rgba(0,0,0,0.5));
+    }
 }
 .diff{
     position:absolute;
@@ -150,5 +164,12 @@
             filter: drop-shadow(1px 1px 7px rgba(0,0,0,0.3));
             transition:all 0.5s 0s ease;
         }
+    }
+    &__land{
+        position:absolute;
+        top:20%;
+        left:3%;
+        width:70%;
+        filter: drop-shadow(1px 1px 7px rgba(0,0,0,0.5));
     }
 }

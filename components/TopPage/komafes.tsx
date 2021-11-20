@@ -8,6 +8,7 @@ export const Komafes: NextPage = () => (
     <h3 className="deco2">駒場グランプリ</h3>
     <p>が開催されています</p>
     <p>「ゆらぎ」の展示が良かったなと思っていただけましたら、以下のリンクまたはQRコードからぜひ投票をお願いします。</p>
-    <a href="投票はこちら">https://www.komabasai.net/72/visitor/prix_hogehogehogehoge</a>
+    <a href="投票はこちら">https://www.komabasai.net/72/visitor/prix</a>
+    {/* リンクがこれで良いか確認していただけると幸いです　*/}
   </div>
 );

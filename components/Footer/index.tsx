@@ -22,7 +22,7 @@ export const Footer: NextPage = () => (
         <img src="/img/sns_icon/note.svg" className={classes.footer_shareicon} />
       </a>
       <a
-        href="https://twitter.com/DP9_Official?s=20"
+        href="https://twitter.com/DP9_Official"
         target="_blank"
         rel="noopener noreferrer"
         className={classes.footer_shareicon_wrapper}

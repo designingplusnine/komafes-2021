@@ -27,7 +27,7 @@ export const ColourItem: NextPage<{ datum: ColourDatum }> = ({ datum }) => (
 
 export const ColourContent: NextPage = () => (
   <>
-    <p>
+    <p className={classes.description}>
       私たちが色から受け取る印象は多岐に渡ります。そこで、この企画では、身の回りのものの色だけを変えた作品を展示しています。「色のゆらぎ」から受ける新鮮な印象をお楽しみください。
     </p>
     {colourData.map(datum => (

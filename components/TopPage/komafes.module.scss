@@ -47,3 +47,9 @@
 }
 
 .resizeimage img { width: 50%; }
+
+@media screen and (max-width: 500px) {
+  .button {
+    font-size: 15px;
+  }
+}

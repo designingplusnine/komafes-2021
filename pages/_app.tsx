@@ -19,6 +19,19 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
+        defaultTitle="ゆらぎ | designing plus nine"
+        description={`ゆらぎゆらめく時代に、わたしたちは生きている。
+不確実な世の中、正解も不正解もわからない時代……そんなことが言われて久しくなりました。そして今、私たちを取り巻く不確かさは、日に日に増しているように感じられます。
+２つの対立するものが、混ざり、跳ね返り、また交わる。
+私たちは、そんなゆらぎの中を歩いていかなければならないのかもしれません。
+しかしゆらぎは、自由がある証拠ともいえます。そこにこそ、私たちは、新しい価値を見出せるのではないでしょうか。
+そんな世の中にあふれる「ゆらぎ」を、デザインを通して考えました。`}
+        additionalLinkTags={[
+          {
+            rel: 'icon',
+            href: '/favicon.ico',
+          },
+        ]}
         openGraph={{
           type: 'website',
           locale: 'ja_JP',

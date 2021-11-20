@@ -2,6 +2,7 @@ import '../styles/globals.scss';
 import { DefaultSeo } from 'next-seo';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
+import { adobeFontsLoader } from '../lib/adoneFonts';
 import { useEffect } from 'react';
 import { useRouter } from 'next/dist/client/router';
 import classes from '../styles/pages/Layout.module.scss';
@@ -11,6 +12,7 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     if (process.browser) {
+      adobeFontsLoader(document);
     }
   }, []);
 

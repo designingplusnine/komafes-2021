@@ -18,7 +18,7 @@ export const ColourLand: NextPage = () => {
   return (
     <>
       <img className={classes.head} src="/img/landing/sense_head.svg" />
-      <img className={classes.landing_wide} src="/img/landing/color_land.svg" />
+      <img className={classes.landing_wide} src="/img/landing/color_land.svg" alt="色のゆらぎ" />
     </>
   );
 };

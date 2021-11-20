@@ -17,7 +17,7 @@ export const TimeLand: NextPage = () => {
   const classes = useStyles();
   return (
     <>
-      <img className={classes.head} src="/img/landing/time_head.svg" />
+      <img className={classes.head} src="/img/landing/time_head.svg" alt="時間のゆらぎ" />
       <img className={classes.landing_wide} src="/img/landing/time_land.svg" />
     </>
   );

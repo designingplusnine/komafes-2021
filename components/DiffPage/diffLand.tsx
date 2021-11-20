@@ -18,7 +18,7 @@ export const DiffLand: NextPage = () => {
   return (
     <>
       <img className={classes.head} src="/img/landing/color_head.svg" />
-      <img className={classes.landing_wide} src="/img/landing/sense_land.svg" />
+      <img className={classes.landing_wide} src="/img/landing/sense_land.svg" alt="常識のゆらぎ" />
     </>
   );
 };

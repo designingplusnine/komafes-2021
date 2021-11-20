@@ -1,18 +1,9 @@
 @import '../../styles/vars.scss';
 
-.page{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hr{
-    width: 90%;
-}
-
 .concept{
     width: 100%;
-    margin-bottom: 30px;
+    padding: 32px 0px 32px 0px;
+    border-bottom: 1px solid $letter-colour;
     &_text{
         text-align: center;
     }
@@ -20,15 +11,21 @@
 
 .time{
     width: 100%;
-    margin-bottom: 30px;
+    padding: 32px 0px 32px 0px;
+    border-bottom: 1px solid $letter-colour;
     &_title{
         text-align: center;
     }
+    &_work{
+
+    }
+
 }
 
 .gravity{
     width: 100%;
-    margin-bottom: 30px;
+    padding: 32px 0px 32px 0px;
+    border-bottom: 1px solid $letter-colour;
     &_title{
         text-align: center;
     }
@@ -36,6 +33,7 @@
 
 .unstable{
     width: 100%;
+    padding: 32px 0px 32px 0px;
     &_title{
         text-align: center;
     }

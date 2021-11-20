@@ -9,7 +9,7 @@ export const Komafes: NextPage = () => (
     <p className={styles.p}>が開催されています</p>
     <p className={styles.p}>「ゆらぎ」の展示が良かったなと思っていただけましたら、</p>
     <p className={styles.p}>以下のリンクまたはQRコードからぜひ投票をお願いします。</p>
-    <a href="https://www.komabasai.net/72/prix/vote?kikaku=444" target="_blank" rel="noopener noreferer noreferrer">
+    <a href="https://www.komabasai.net/72/prix/vote/?id=444" target="_blank" rel="noopener noreferer noreferrer">
       <div className={styles.button}>投票はこちら</div>
     </a>
     <div className={styles.qr_div}>

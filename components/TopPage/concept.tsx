@@ -4,9 +4,9 @@ import styles from './concept.module.scss';
 const arr = [
   { content: 'ゆらぎゆらめく時代に、', marginLeft: '30%', isFlag: true },
   { content: 'わたしたちは生きている。', marginLeft: '40%', isFlag: true },
-  { content: '不確実な世の中、', marginLeft: '10%', isFlag: false ,marginFirst:'10%'},
+  { content: '不確実な世の中、', marginLeft: '10%', isFlag: false, marginFirst: '10%' },
   { content: '正解も不正解もわからない時代……', marginLeft: '0%', isFlag: false },
-  { content: 'そんなことが言われて久しくなりました。', marginLeft: '20%', isFlag: true  },
+  { content: 'そんなことが言われて久しくなりました。', marginLeft: '20%', isFlag: true },
   { content: 'そして今、私たちを取り巻く不確かさは、', marginLeft: '5%', isFlag: true },
   { content: '日に日に増しているように感じられます。', marginLeft: '15%', isFlag: true },
   { content: '２つの対立するものが、', marginLeft: '25%', isFlag: false },
@@ -29,7 +29,7 @@ export const Concept: NextPage = () => (
     <div className={styles.concept__statement}>
       {arr.map((paragraph, i) => (
         <div
-          style={{marginLeft:paragraph.marginLeft}}
+          style={{ marginLeft: paragraph.marginLeft }}
           className={paragraph.isFlag ? styles.concept__normal : styles.concept__indention}
           key={i}
         >

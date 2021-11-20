@@ -11,7 +11,14 @@ export const ColourItem: NextPage<{ datum: ColourDatum }> = ({ datum }) => (
     </h2>
     <div className={classes.content__container}>
       <div>
-        <p>{datum.description}</p>
+        <p>
+          {datum.description.split('\n').map(l => (
+            <>
+              {l}
+              <br />
+            </>
+          ))}
+        </p>
         {/* <p>作：{datum.designer}</p> */}
       </div>
     </div>

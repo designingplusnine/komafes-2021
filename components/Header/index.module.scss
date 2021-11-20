@@ -1,0 +1,70 @@
+@import '../../styles/vars';
+
+.header {
+  align-items: flex-end;
+  background-color: $white-colour;
+  display: flex;
+  height: $header-height;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  &__logo {
+    color: $letter-colour;
+    display: block;
+    height: 60%;
+    margin-bottom: 12px;
+
+    &__content {
+      height: 100%;
+
+      @include mq(small) {
+        display: none;
+      }
+
+      &short {
+        display: none;
+        height: 100%;
+
+        @include mq(small) {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  &__logotype {
+    display: block;
+    height: 90%;
+    margin: 0 28px 4px;
+
+    &__link {
+      // display: block;
+      height: 90%;
+    }
+  }
+
+  &__link {
+    border-radius: 5px;
+    color: $letter-colour;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px 10px;
+    text-decoration: none;
+
+    &__yuragi {
+      @include mq(medium) {
+        display: none;
+      }
+    }
+
+    &__current {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      margin: 0 5px;
+      padding: 5px 10px 25px;
+    }
+  }
+}

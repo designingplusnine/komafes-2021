@@ -1,10 +1,17 @@
 import { NextPage } from 'next';
+import { Paper } from '@material-ui/core';
+import { TimeContents } from '../components/TimePage/TimeContents';
+import { TimeLand } from '../components/TimePage/timeLand';
+import paperStyles from '../styles/pages/Paper.module.scss';
 import styles from '../styles/pages/Time.module.scss';
 
 const Time: NextPage = () => (
-  <div className={styles.container}>
-    <h1 className={styles.title}>Welcome to Komaba Festival exhibition by designing plus nine!</h1>
-  </div>
+  <>
+    <TimeLand />
+    <Paper className={paperStyles.paper}>
+      <TimeContents />
+    </Paper>
+  </>
 );
 
 export default Time;

@@ -4,7 +4,12 @@
   &__container {
     background-image: url('/img/background/sea_50percent.png');
     background-repeat: repeat-y;
-    background-size: contain;
+    background-size: cover;
+    margin-top: $header-height;
     min-height: 100vh;
+
+    // @include mq(xxlarge) {
+    //   background-size: contain;
+    // }
   }
 }

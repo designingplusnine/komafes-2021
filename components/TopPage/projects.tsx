@@ -1,16 +1,25 @@
 import { NextPage } from 'next';
-import Image from 'next/image';
-import Colour from '/public/img/topPage/colour.png'
-import Time from '/public/img/topPage/time.png'
-import Diff from '/public/img/topPage/diff.png'
-import styles from './concept.module.scss';
+import styles from './projects.module.scss';
 
 export const Projects: NextPage = () =>
-<div>
-<div>
-<Image src={Colour} width={800}/>
-<Image src={Time} width={800}/>
-<Image src={Diff} width={800}/>
+<>
+<div className={styles.projects}>
+<h2 className={styles.projects__p}>ゆらぐ3つの企画</h2>
 </div>
-
-</div>;
+<div className={styles.button}>
+    <div className={styles.button__colour}>色のゆらぎ</div>
+    <div className={styles.button__time}>時間のゆらぎ</div>
+    <div className={styles.button__diff}>常識の揺らぎ</div>
+</div>
+<div className={styles.box}>
+    <div className={styles.colour}>
+        <img src="/img/topPage/colour.png" />
+    </div>
+    <div  className={styles.time} >
+        <img src="/img/topPage/time.png" />
+    </div>
+    <div className={styles.diff} >
+        <img src="/img/topPage/diff.png" />
+    </div>
+</div>
+</>;

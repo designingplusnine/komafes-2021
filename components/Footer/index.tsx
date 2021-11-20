@@ -7,8 +7,10 @@ export const Footer: NextPage = () => (
       <img src="/img/dp9logo/dp9_logo.svg" className={classes.footer_dp9logo} />
     </a>
     <div className={classes.footer_text}>
-      <p>DESIGN FOR EVERYONE -「すべての人が、デザインを。」 　　東京大学 × 東京藝術大学 のデザインサークル</p>
-      <p>Copyright (C) designing plus nine. All Rights Reserved.</p>
+      <p className={classes.footer_text_01}>
+        DESIGN FOR EVERYONE -「すべての人が、デザインを。」 　　東京大学 × 東京藝術大学 のデザインサークル
+      </p>
+      <p className={classes.footer_text_02}>Copyright (C) designing plus nine. All Rights Reserved.</p>
     </div>
     <div className={classes.sns_icon}>
       <a

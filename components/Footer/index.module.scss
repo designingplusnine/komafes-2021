@@ -3,17 +3,17 @@
     align-items: flex-end ;
     background-color: #49403D ;
     height: $footer-height ;
-
     left: 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding:13px 18px;
+    padding: 13px 18px;
 
 }
 .footer_dp9logo{
     height: 24px;
-
+    width: 100px;
+    padding: none;
 }
 .footer_text{
     font-size: 10px;
@@ -21,16 +21,28 @@
     font-weight: 500;
 
 }
+.footer_text_01{
+    display: none;
+    @include mq (small){
+        display: inline;
+    }
+}
+.footer_text_02{
+    width: 200px;
+    @include mq (xsmall){
+        width: 100%;
+    }
+}
 .sns_icon{
-    height: 20px;
-    width: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    right: 20px;
-    bottom: 18px;
 
+        height: 20px;
+        width: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        right: 20px;
+        bottom: 18px;
 }
 .footer_shareicon{
     height: 100%;

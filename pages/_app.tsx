@@ -41,7 +41,6 @@ function MyApp({ Component, pageProps }) {
       <div className={classes.background__container} style={{ backgroundColor: `#${colours[router.pathname]}` }}>
         <Component {...pageProps} />
       </div>
-
       <Footer />
     </>
   );

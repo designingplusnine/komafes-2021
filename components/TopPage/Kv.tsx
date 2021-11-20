@@ -1,10 +1,12 @@
 import { NextPage } from 'next';
 import Image from 'next/image' ;
-import Kv_png from "../../public/img/topPage/kv.png"
-import styles from './concept.module.scss';
+import styles from './kv.module.scss';
+
+
 
 export const Kv: NextPage = () => (
   <div>
-    <Image src={Kv_png} layout="intrinsic"/>
+    <img srcSet="img/topPage/kv_pc.png"className={styles.kv_pc}/>
+    <img srcSet="img/topPage/kv_smart.png"className={styles.kv_smart}/>
   </div>
 );

@@ -16,7 +16,7 @@ const TimeDatum: NextPage<{ datum: TimeDatum }> = ({ datum }) => (
             </span>
           ))}
         </p>
-        <img src={datum.image} className={classes.img} />
+        <img src={datum.image} className={classes.img} alt="" />
       </div>
     </div>
   </div>
@@ -24,6 +24,9 @@ const TimeDatum: NextPage<{ datum: TimeDatum }> = ({ datum }) => (
 
 export const TimeContents: NextPage = () => (
   <>
+    <p>
+      今と昔が融合する時間のゆらぎを表現しました。懐かしくも新しいような作品が展示されています。異なる時代の雰囲気が重なり合う、時間を超えたゆらぎから生まれる不思議な世界観をぜひお楽しみください。
+    </p>
     {timeData.map(datum => (
       <TimeDatum key={datum.title} datum={datum} />
     ))}

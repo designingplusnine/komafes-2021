@@ -4,14 +4,10 @@ import classes from './TimeContent.module.scss';
 
 const TimeDatum: NextPage<{ datum: TimeDatum }> = ({ datum }) => (
   <>
-    <h2>
-      {datum.title}
-      <span className={classes.category}>#{datum.category}</span>
-    </h2>
+    <h2>{datum.title}</h2>
     <div className={classes.content__container}>
       <div>
         <p>{datum.description}</p>
-        <p>作：{datum.designer}</p>
       </div>
     </div>
   </>

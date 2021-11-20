@@ -1,7 +1,17 @@
 @import '~normalize.css';
+@import "./vars.scss";
 
 * {
   font-family: 'fot-tsukuaoldmin-pr6n', sans-serif;
   font-style: normal;
   font-weight: 300;
+}
+
+a{
+  color:$letter-colour;
+  text-decoration: none;
+  a:hover{
+     text-decoration: none;
+     color:$letter-colour;
+  }
 }

@@ -3,13 +3,12 @@ import { DefaultSeo } from 'next-seo';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { adobeFontsLoader } from '../lib/adobeFonts';
+import { existsGaId, pageview } from '../lib/gtag';
 import { useEffect } from 'react';
 import { useRouter } from 'next/dist/client/router';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 import Head from 'next/head';
 import classes from '../styles/pages/Layout.module.scss';
-import GoogleAnalytics from '../components/GoogleAnalytics';
-import { existsGaId, pageview } from '../lib/gtag'
-
 
 export const colours = {
   '/': 'f7fdfd',
@@ -26,21 +25,19 @@ function MyApp({ Component, pageProps }) {
       adobeFontsLoader(document);
     }
     if (!existsGaId) {
-      return
+      return;
     }
 
-    const handleRouteChange = (path) => {
-      pageview(path)
-    }
+    const handleRouteChange = path => {
+      pageview(path);
+    };
 
-    router.events.on('routeChangeComplete', handleRouteChange)
+    router.events.on('routeChangeComplete', handleRouteChange);
 
     return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [router.events])
-
-
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <>

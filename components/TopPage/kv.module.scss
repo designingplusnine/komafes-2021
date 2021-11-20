@@ -6,3 +6,15 @@
 .kv_smart{
     display:none;
 }
+
+
+@media  screen and (max-width:600px) {
+    .kv_smart{
+        width:100%;
+        height:auto;
+        display:block:
+    }
+    .kv_pc{
+        display:none;
+    }
+}

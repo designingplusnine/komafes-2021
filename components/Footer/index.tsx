@@ -8,7 +8,7 @@ export const Footer: NextPage = () => (
     </a>
     <div className={classes.footer_text}>
       <p className={classes.footer_text_01}>
-        DESIGN FOR EVERYONE -「すべての人が、デザインを。」 　　東京大学 × 東京藝術大学 のデザインサークル
+        DESIGN FOR EVERYONE -「すべての人が、デザインを。」東京大学 × 東京藝術大学 のデザインサークル
       </p>
       <p className={classes.footer_text_02}>Copyright (C) designing plus nine. All Rights Reserved.</p>
     </div>

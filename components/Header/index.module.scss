@@ -14,21 +14,35 @@
   &__logo {
     color: $letter-colour;
     display: block;
-    height: 80%;
-    margin-bottom: 4px;
+    height: 60%;
+    margin-bottom: 12px;
 
     &__content {
       height: 100%;
+
+      @include mq(small) {
+        display: none;
+      }
+
+      &short {
+        display: none;
+        height: 100%;
+
+        @include mq(small) {
+          display: inline-block;
+        }
+      }
     }
   }
 
   &__logotype {
     display: block;
     height: 90%;
-    margin: 0 28px;
+    margin: 0 28px 4px;
 
     &__link {
-      display: block;
+      // display: block;
+      height: 90%;
     }
   }
 
@@ -39,6 +53,12 @@
     margin: 0 5px;
     padding: 5px 10px 10px;
     text-decoration: none;
+
+    &__yuragi {
+      @include mq(medium) {
+        display: none;
+      }
+    }
 
     &__current {
       border-bottom-left-radius: 0;

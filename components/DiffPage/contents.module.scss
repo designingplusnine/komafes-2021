@@ -17,28 +17,34 @@
         text-align: center;
     }
     &_work{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
         &_comment{
-
+        }
+        &_movie{
         }
 
     }
 
 }
 
-.gravity{
-    width: 100%;
-    padding: 32px 0px 32px 0px;
-    border-bottom: 1px solid $letter-colour;
-    &_title{
-        text-align: center;
-    }
-}
 
 .unstable{
     width: 100%;
     padding: 32px 0px 32px 0px;
     &_title{
         text-align: center;
+    }
+    &_work{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &_work img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

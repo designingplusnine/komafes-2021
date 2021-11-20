@@ -12,14 +12,16 @@ export const Contents: NextPage = () => (
         <div className={classes.time}>
             <div className={classes.time_work}>
                 <h3 className={classes.time_work_title}>ゆらぐ一分間</h3>
-                <div className={classes.movie}>
-                    <iframe
-                        src="https://www.youtube.com/embed/AjARSNuN2Pk"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                    ></iframe>
+                <div className={classes.time_work_movie}>
+                    <div className={classes.movie}>
+                        <iframe
+                            src="https://www.youtube.com/embed/AjARSNuN2Pk"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
                 </div>
                 <p className={classes.time_work_comment}>
                     時計は動く。規則正しく、正確に。早送りでも、逆再生でも、動画がカクカクでもお構いなしに。時間は決してゆらがない。時計は決して間違えない。
@@ -30,14 +32,16 @@ export const Contents: NextPage = () => (
         <div className={classes.time}>
             <div className={classes.time_work}>
                 <h3 className={classes.time_work_title}>ちょっとおかしい？折り紙の折り方講座</h3>
-                <div className={classes.movie}>
-                    <iframe
-                        src="https://www.youtube.com/embed/P1YwFBkECkE"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                    ></iframe>
+                <div className={classes.time_work_movie}>
+                    <div className={classes.movie}>
+                        <iframe
+                            src="https://www.youtube.com/embed/P1YwFBkECkE"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
                 </div>
                 <p className={classes.time_work_comment}>
                     一枚の折り紙を折っていくと鶴になり、開くと一枚の折り紙に戻る。それは時間が揺らぐ中でも同じ。
@@ -47,7 +51,7 @@ export const Contents: NextPage = () => (
         <div className={classes.unstable}>
             <div className={classes.unstable_work}>
                 <h3 className={classes.unstable_work_title}>超安定している不安定</h3>
-                <img src="img/Diff/ﾏﾁｶﾞｲｻｶﾞｼ.jpg"
+                <img src="img/Diff/unstable.jpg"></img>
                 <p className={classes.unstable_work_comment}>超安定している不安定を書きました。</p>
             </div>
         </div>

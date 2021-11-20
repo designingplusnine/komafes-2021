@@ -4,15 +4,7 @@ import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { useEffect } from 'react';
 import { useRouter } from 'next/dist/client/router';
-import Head from 'next/head';
 import classes from '../styles/pages/Layout.module.scss';
-
-export const colours = {
-  '/': 'f7fdfd',
-  '/colour': 'aec8d4',
-  '/time': 'f3e6e9',
-  '/diff': 'beb399',
-};
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -22,6 +14,12 @@ function MyApp({ Component, pageProps }) {
     }
   }, []);
 
+  const colours = {
+    '/': 'f7fdfd',
+    '/diff': 'beb399',
+    '/time': 'f3e6e9',
+    '/colour': 'aec8d4',
+  };
   return (
     <>
       <DefaultSeo
@@ -41,6 +39,7 @@ function MyApp({ Component, pageProps }) {
       <div className={classes.background__container} style={{ backgroundColor: `#${colours[router.pathname]}` }}>
         <Component {...pageProps} />
       </div>
+
       <Footer />
     </>
   );

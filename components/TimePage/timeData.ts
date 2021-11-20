@@ -10,7 +10,6 @@ export const timeData: TimeDatum[] = [
   {
     title: 'タイトル',
     description: '説明文だよ',
-    // designer: 'hiroki',
     image: '',
   },
 ];

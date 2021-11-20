@@ -1,25 +1,32 @@
-import classes from './index.module.scss';
 import { NextPage } from 'next';
+import classes from './index.module.scss';
 
-
-export const Footer: NextPage = () =>
-<footer className={classes.footer}>
-    <img
-        src="/img/dp9logo/dp9logo_white"
-        className="classes.footer_dp9logo"
-    />
-    <img
-        src="/img/dp9logo/dp9logotype_white"
-        className="classes.footer_dp9logotype"
-    />
-    <div className="footer_text">
-        <p>"DESIGN FOR EVERYONE -「すべての人が、デザインを。」 　　東京大学 × 東京藝術大学 のデザインサークル"</p>
-        <p>"Copyright (C) designing plus nine. All Rights Reserved."</p>
+export const Footer: NextPage = () => (
+  <footer className={classes.footer}>
+    <a href="http://designingplusnine.com/" target="_blank" rel="noopener noreferrer">
+      <img src="/img/dp9logo/dp9_logo.svg" className={classes.footer_dp9logo} />
+    </a>
+    <div className={classes.footer_text}>
+      <p>DESIGN FOR EVERYONE -「すべての人が、デザインを。」 　　東京大学 × 東京藝術大学 のデザインサークル</p>
+      <p>Copyright (C) designing plus nine. All Rights Reserved.</p>
     </div>
-    <div className="sns_icon">
-        <img src="/img/sns_icon/note" className="classes.footer_share_note" />
-        <img src="/img/sns_icon/twitter" className="classes.footer_share_twitter" />
-        <img src="/img/sns_icon/facebook" className="classes.footer_share_facebook" />
+    <div className={classes.sns_icon}>
+      <a
+        href="https://note.com/dp9"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={classes.footer_shareicon_wrapper}
+      >
+        <img src="/img/sns_icon/note.svg" className={classes.footer_shareicon} />
+      </a>
+      <a
+        href="https://twitter.com/DP9_Official?s=20"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={classes.footer_shareicon_wrapper}
+      >
+        <img src="/img/sns_icon/twitter.svg" className={classes.footer_shareicon} />
+      </a>
     </div>
   </footer>
 );

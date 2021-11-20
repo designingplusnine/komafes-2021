@@ -2,6 +2,8 @@ import '../styles/globals.scss';
 import { DefaultSeo } from 'next-seo';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
+import { adobeFontsLoader } from '../lib/adobeFonts';
+import { useEffect } from 'react';
 import { useRouter } from 'next/dist/client/router';
 import Head from 'next/head';
 import classes from '../styles/pages/Layout.module.scss';
@@ -15,6 +17,12 @@ export const colours = {
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+
+  useEffect(() => {
+    if (process.browser) {
+      adobeFontsLoader(document);
+    }
+  }, []);
 
   return (
     <>

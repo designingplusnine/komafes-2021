@@ -4,7 +4,7 @@ import Kv_png from "../../public/img/topPage/kv.png"
 import styles from './concept.module.scss';
 
 export const Kv: NextPage = () => (
-  <div>
+  <div className={styles.Kv}>
     <Image src={Kv_png} layout="intrinsic"/>
   </div>
 );

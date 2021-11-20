@@ -1,3 +1,26 @@
-$main-colour: #fff;
-$white-colour: #fff;
-$letter-colour: #131313;
+$main-blue: #aec8d4;
+$sub-blue: #657b85;
+$main-pink: #f3e6e9;
+$sub-pink: #9d7b83;
+$main-olive: #beb399;
+$white-colour: #f7fdfd;
+$letter-colour: #49403d;
+$page-padding: 15px;
+$breakpoints: (
+  'xsmall': 380px,
+  'small' : 600px,
+  'medium': 750px,
+  'large' : 1024px,
+  'xlarge': 1280px,
+  'xxlarge': 1536px,
+  'xxxlarge': 3745px,
+);
+
+@mixin mq($breakpoint: medium) {
+  @media screen and (max-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+
+$header-height: 70px;
+$footer-height: 70px;

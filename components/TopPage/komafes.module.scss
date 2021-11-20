@@ -1,0 +1,55 @@
+@import '../../styles/vars';
+
+.deco1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.deco2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.p {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.button {
+  background-color: $letter-colour;
+  border-radius: 10px;
+  color: $white-colour;
+  cursor: pointer;
+  display: flex;
+  filter: drop-shadow(1px 1px 5px rgb(0 0 0 / 20%));
+  font-size: 1.25rem;
+  justify-content: center;
+  margin: 32px auto;
+  max-width: 1200px;
+  padding: 16px;
+  transition: all 0.5s 0s ease;
+  width: 35%;
+
+  &:hover {
+    filter: drop-shadow(1px 1px 7px rgb(0 0 0 / 30%));
+    transform: scale(1.05, 1.05);
+  }
+}
+
+.qr {
+  height: auto;
+  margin-bottom: 10%;
+  width: 35%;
+
+  &_div {
+    text-align: center;
+  }
+}
+
+.resizeimage img { width: 50%; }
+
+@media screen and (max-width: 500px) {
+  .button {
+    font-size: 15px;
+  }
+}

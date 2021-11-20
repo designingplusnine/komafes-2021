@@ -1,0 +1,36 @@
+@import '../../styles/vars';
+
+.container {
+  border-bottom: $letter-colour 1px solid;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.category {
+  color: $sub-blue;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 12px;
+
+  @include mq(xsmall) {
+    margin-left: 0;
+  }
+}
+
+.content {
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__image {
+    margin: 16px;
+    width: 200px;
+  }
+}
+
+.description {
+  margin-bottom: 60px;
+}

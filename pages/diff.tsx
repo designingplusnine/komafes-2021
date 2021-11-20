@@ -1,10 +1,18 @@
+import { Contents } from '../components/DiffPage/contents';
 import { NextPage } from 'next';
+import { Paper } from '@material-ui/core';
+
+import { DiffLand } from '../components/DiffPage/diffLand';
+import paperStyles from '../styles/pages/Paper.module.scss';
 import styles from '../styles/pages/Diff.module.scss';
 
 const Diff: NextPage = () => (
-  <div className={styles.container}>
-    <h1 className={styles.title}>Welcome to Komaba Festival exhibition by designing plus nine!</h1>
-  </div>
+  <>
+    <DiffLand />
+    <Paper className={paperStyles.paper}>
+      <Contents />
+    </Paper>
+  </>
 );
 
 export default Diff;

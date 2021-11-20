@@ -1,26 +1,17 @@
-html,
-body {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import '~normalize.css';
+@import "./vars.scss";
 
 * {
-  box-sizing: border-box;
+  font-family: 'fot-tsukuaoldmin-pr6n', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+a{
+  color:$letter-colour;
+  text-decoration: none;
+  a:hover{
+     text-decoration: none;
+     color:$letter-colour;
+  }
 }

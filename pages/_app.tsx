@@ -24,6 +24,12 @@ function MyApp({ Component, pageProps }) {
     }
   }, []);
 
+  const colours = {
+    '/': 'f7fdfd',
+    '/diff': 'beb399',
+    '/time': 'f3e6e9',
+    '/colour': 'aec8d4',
+  };
   return (
     <>
       <DefaultSeo

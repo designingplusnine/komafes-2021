@@ -13,10 +13,10 @@ export const ColourItem: NextPage<{ datum: ColourDatum }> = ({ datum }) => (
       <div>
         <p>
           {datum.description.split('\n').map(l => (
-            <>
+            <span key={l}>
               {l}
               <br />
-            </>
+            </span>
           ))}
         </p>
         {/* <p>作：{datum.designer}</p> */}
@@ -28,7 +28,7 @@ export const ColourItem: NextPage<{ datum: ColourDatum }> = ({ datum }) => (
 export const ColourContent: NextPage = () => (
   <>
     {colourData.map(datum => (
-      <ColourItem datum={datum} />
+      <ColourItem datum={datum} key={datum.title} />
     ))}
   </>
 );

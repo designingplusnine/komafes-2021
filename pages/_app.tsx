@@ -3,8 +3,10 @@ import { DefaultSeo } from 'next-seo';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 import { adobeFontsLoader } from '../lib/adobeFonts';
+import { existsGaId, pageview } from '../lib/gtag';
 import { useEffect } from 'react';
 import { useRouter } from 'next/dist/client/router';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 import Head from 'next/head';
 import classes from '../styles/pages/Layout.module.scss';
 
@@ -22,7 +24,20 @@ function MyApp({ Component, pageProps }) {
     if (process.browser) {
       adobeFontsLoader(document);
     }
-  }, []);
+    if (!existsGaId) {
+      return;
+    }
+
+    const handleRouteChange = path => {
+      pageview(path);
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <>
@@ -52,7 +67,9 @@ function MyApp({ Component, pageProps }) {
           cardType: 'summary_large_image',
         }}
       />
+      <GoogleAnalytics />
       <Header />
+
       <div className={classes.background__container} style={{ backgroundColor: `#${colours[router.pathname]}` }}>
         <Component {...pageProps} />
       </div>

@@ -51,7 +51,7 @@ export const Contents: NextPage = () => (
     <div className={classes.unstable}>
       <div className={classes.unstable_work}>
         <h2 className={classes.unstable_work_title}>超安定している不安定</h2>
-        <img src="img/Diff/unstable.jpg"></img>
+        <img src="img/Diff/unstable.jpg" alt=""></img>
         <p className={classes.unstable_work_comment}>超安定している不安定を書きました。</p>
       </div>
     </div>

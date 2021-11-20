@@ -10,16 +10,10 @@ export const Komafes: NextPage = () => (
     <p className={styles.p}>
       「ゆらぎ」の展示が良かったなと思っていただけましたら、以下のリンクまたはQRコードからぜひ投票をお願いします。
     </p>
-<<<<<<< HEAD
     <a href="https://www.komabasai.net/72/visitor/prix">投票はこちら</a>
     {/* リンクがこれで良いか確認していただけると幸いです　*/}
     <p className={styles.p}>
       <img src="/public/img/topPage/QR.png"></img>
     </p>
-=======
-    <a href="https://www.komabasai.net/72/prix/vote/" target="_blank" rel="noopener noreferer noreferrer">
-      <div>投票はこちら</div>
-    </a>
->>>>>>> 2c1889dd02273f08b89a6a8bfce2de725ba2d32c
   </div>
 );

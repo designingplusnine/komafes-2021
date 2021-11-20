@@ -1,5 +1,11 @@
 @import '../../styles/vars';
 
+.container {
+  border-bottom: $letter-colour 1px solid;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 .category {
   color: $sub-blue;
   display: inline-block;
@@ -13,6 +19,14 @@
 
 .content {
   &__container {
+    align-items: center;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__image {
+    margin: 16px;
+    width: 200px;
   }
 }

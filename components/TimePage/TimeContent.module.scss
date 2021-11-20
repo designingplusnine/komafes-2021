@@ -1,5 +1,11 @@
 @import '../../styles/vars';
 
+.container {
+  // border-bottom: $letter-colour 1px solid;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 .category {
   color: $sub-pink;
   display: inline-block;
@@ -9,4 +15,9 @@
   @include mq(xsmall) {
     margin-left: 0;
   }
+}
+
+.img {
+  max-width: 400px;
+  width: 100%;
 }

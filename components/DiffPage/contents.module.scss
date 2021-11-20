@@ -2,8 +2,8 @@
 
 .concept{
     width: 100%;
-    padding: 32px 0px 32px 0px;
-    border-bottom: 1px solid $letter-colour;
+    padding: 40px 0px 40px 0px;
+    border-bottom: 0.5px solid $letter-colour;
     &_text{
         text-align: center;
     }
@@ -11,8 +11,7 @@
 
 .time{
     width: 100%;
-    padding: 32px 0px 32px 0px;
-    border-bottom: 1px solid $letter-colour;
+
     &_title{
         text-align: center;
     }
@@ -20,10 +19,13 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+        padding: 40px 0px 80px 0px;
+        border-bottom: 0.5px solid $letter-colour;
         &_title{
             text-align: center;
         }
         &_comment{
+            padding-top: 16px;
         }
         &_movie{
         }
@@ -35,7 +37,7 @@
 
 .unstable{
     width: 100%;
-    padding: 32px 0px 32px 0px;
+    padding: 40px 0px 80px 0px;
     &_title{
         text-align: center;
     }
@@ -45,6 +47,9 @@
         margin-right: auto;
         &_title{
             text-align: center;
+        }
+        &_comment{
+            padding-top: 16px;
         }
     }
     &_work img{

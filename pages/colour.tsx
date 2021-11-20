@@ -1,10 +1,14 @@
+import { ColourContent } from '../components/ColourPage/ColourItem';
 import { NextPage } from 'next';
 import { Paper } from '@material-ui/core';
 import classes from '../styles/pages/Colour.module.scss';
+import paperStyles from '../styles/pages/Paper.module.scss';
 
 const Colour: NextPage = () => (
   <div className={classes.container}>
-    <Paper>aaa</Paper>
+    <Paper className={paperStyles.paper}>
+      <ColourContent />
+    </Paper>
   </div>
 );
 

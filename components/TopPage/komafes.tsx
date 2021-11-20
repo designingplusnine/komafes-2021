@@ -13,7 +13,7 @@ export const Komafes: NextPage = () => (
       <div className={styles.button}>投票はこちら</div>
     </a>
     <div className={styles.qr_div}>
-      <img src="/img/topPage/QR.png" className={styles.qr}></img>
+      <img src="/img/topPage/vote.png" className={styles.qr}></img>
     </div>
   </div>
 );

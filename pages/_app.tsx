@@ -54,6 +54,10 @@ function MyApp({ Component, pageProps }) {
             rel: 'icon',
             href: '/favicon.ico',
           },
+          {
+            rel: 'og:image',
+            href: '/img/topPage/kv_pc.png',
+          },
         ]}
         openGraph={{
           type: 'website',

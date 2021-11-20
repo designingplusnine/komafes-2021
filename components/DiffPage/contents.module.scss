@@ -16,18 +16,20 @@
         text-align: center;
     }
     &_work{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         padding: 0px 0px 40px 0px;
         border-bottom: 0.5px solid $letter-colour;
         &_title{
             text-align: center;
         }
-        &_comment{
-            padding-top: 16px;
-        }
         &_movie{
             margin: 0 auto;
+        }
+        &_comment{
+            padding-top: 16px;
+            margin: 0 auto;
+            width: 64vw;
         }
 
     }
@@ -42,7 +44,7 @@
         text-align: center;
     }
     &_work{
-        width: 80%;
+        width: 64vw;
         margin: 0 auto;
         &_title{
             text-align: center;

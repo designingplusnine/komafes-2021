@@ -10,17 +10,14 @@ export const ColourItem: NextPage<{ datum: ColourDatum }> = ({ datum }) => (
       <span className={classes.category}>#{datum.category}</span>
     </h2>
     <div className={classes.content__container}>
-      <div>
-        <p>
-          {datum.description.split('\n').map(l => (
-            <span key={l}>
-              {l}
-              <br />
-            </span>
-          ))}
-        </p>
-        {/* <p>作：{datum.designer}</p> */}
-      </div>
+      <p style={{ lineHeight: 1.4 }}>
+        {datum.description.split('\n').map(l => (
+          <span key={l}>
+            {l}
+            <br />
+          </span>
+        ))}
+      </p>
     </div>
   </div>
 );

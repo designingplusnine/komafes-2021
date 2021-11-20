@@ -15,6 +15,8 @@ export const Projects: NextPage = () => (
       <div className={styles.colour}>
         <img src="/img/topPage/colour.png" className={styles.colour__img} />
         <img src="/img/topPage/colour.svg" className={styles.colour__button} />
+        常識というのは、あまりに"自然に"日常に溶け込んでいます。常識を疑い、問うためには、まずは何が常識なのかを発見することが不可欠です。
+ここでは私たちの常識がゆらぐような、「何かがおかしい」動画や写真を紹介しています。普段通りじゃない動きや振る舞いをするものを見つけてみてください。
       </div>
       <div className={styles.time}>
         <img src="/img/topPage/time.png" className={styles.time__img} />

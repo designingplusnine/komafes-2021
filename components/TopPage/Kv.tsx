@@ -1,9 +1,4 @@
 import { NextPage } from 'next';
-import styles from './concept.module.scss';
+import styles from '../styles/TopPage/concept.module.scss';
 
-export const Kv: NextPage = () => (
-  <div>
-    {/* write here */}
-    <h1>ここにKVが来ます</h1>
-  </div>
-);
+export const Kv: NextPage = () => <div></div>;

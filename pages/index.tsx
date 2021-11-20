@@ -1,5 +1,4 @@
 import { Concept } from '../components/TopPage/concept';
-import { Footer } from '../components/Footer';
 import { Komafes } from '../components/TopPage/komafes';
 import { Kv } from '../components/TopPage/Kv';
 import { NextPage } from 'next';

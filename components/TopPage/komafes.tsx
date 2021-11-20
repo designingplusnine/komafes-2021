@@ -11,9 +11,8 @@ export const Komafes: NextPage = () => (
       「ゆらぎ」の展示が良かったなと思っていただけましたら、以下のリンクまたはQRコードからぜひ投票をお願いします。
     </p>
     <a href="https://www.komabasai.net/72/visitor/prix">投票はこちら</a>
-    {/* リンクがこれで良いか確認していただけると幸いです　*/}
     <p className={styles.p}>
-      <img src="/public/img/topPage/QR.png"></img>
+      <img src="/img/topPage/QR.png"></img>
     </p>
   </div>
 );

@@ -13,12 +13,14 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export const ColourLand: NextPage = () => {
-  const classes = useStyles();
-  return (
-    <>
-      <img className={classes.head} src="/img/landing/sense_head.svg" />
-      <img className={classes.landing_wide} src="/img/landing/color_land.svg" alt="色のゆらぎ" />
-    </>
-  );
-};
+export const ColourLand: NextPage = () => (
+  // const classes = useStyles();
+  <>
+    <img src="/img/landing/sense_head.svg" style={{ width: '100vw' }} />
+    <img
+      src="/img/landing/color_land.svg"
+      alt="色のゆらぎ"
+      style={{ width: '60%', maxWidth: '600px', display: 'block', margin: '0 auto' }}
+    />
+  </>
+);

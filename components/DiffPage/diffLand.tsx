@@ -13,12 +13,19 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export const DiffLand: NextPage = () => {
-  const classes = useStyles();
-  return (
-    <>
-      <img className={classes.head} src="/img/landing/color_head.svg" />
-      <img className={classes.landing_wide} src="/img/landing/sense_land.svg" alt="常識のゆらぎ" />
-    </>
-  );
-};
+export const DiffLand: NextPage = () => (
+  // const classes = useStyles();
+  <>
+    <img
+      // className={classes.head}
+      src="/img/landing/color_head.svg"
+      style={{ width: '100vw' }}
+    />
+    <img
+      // className={classes.landing_wide}
+      src="/img/landing/sense_land.svg"
+      alt="常識のゆらぎ"
+      style={{ width: '60%', maxWidth: 600, display: 'block', margin: '0 auto' }}
+    />
+  </>
+);

@@ -59,6 +59,20 @@ function MyApp({ Component, pageProps }) {
             href: '/img/topPage/kv_pc.png',
           },
         ]}
+        additionalMetaTags={[
+          {
+            name: 'og:image',
+            content: 'https://komafes-2021.vercel.app//img/topPage/kv_pc.png',
+          },
+          {
+            name: 'og:title',
+            content: 'ゆらぎ | designing plus nine',
+          },
+          {
+            name: 'twitter:title',
+            content: 'ゆらぎ | designing plus nine',
+          },
+        ]}
         openGraph={{
           type: 'website',
           locale: 'ja_JP',
